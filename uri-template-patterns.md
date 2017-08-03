@@ -47,7 +47,16 @@ public void handle(@PathVariable String version, @PathVariable String extension)
 
 当一个URL匹配到多个模式时，会选择使用最确切的那一个
 
-如"/hotels/{hotel}/\*" 有一个URI变量和一个通配符 与 “/hotels/{hotel}/\*\*” 有一个URI变量和两个通配符。那么“/hotels/{hotel}/\*” 比
+* 如"/hotels/{hotel}/\*" 有一个URI变量和一个通配符 与 “/hotels/{hotel}/\*\*” 有一个URI变量和两个通配符。那么“/hotels/{hotel}/\*” 比“/hotels/{hotel}/\*\*”更确切。
 
-“/hotels/{hotel}/\*\*”更确切。
+* 如果两个匹配模式的数量是一样的，那么更长的那个认为是最准确的。例如/foo/bar\*比/foo/\*更长，被认为是最准确的
+* 当两个匹配模式具有一样的数量和长度，具有更少通配符的那个模式被认为是更确切的。例如：/hotels/{hotel}比/hotels/\*更准确。
+
+### Path Patterns with Placeholders
+
+@RequestMapping注解中的匹配模式支持**${...}**占位符（本地和系统属性和环境变量）
+
+这可能对映射到的路径可能需要配置文件配置 这种情况来说非常有用
+
+
 
