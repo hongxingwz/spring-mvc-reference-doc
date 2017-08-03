@@ -6,4 +6,5 @@
 * [@ResponseBody](responsebody.md)
 * [@RestController](restcontroller.md)
 * [Composed @RequestMaping Variants](composed-requestmaping-variants.md)
+* [URI Template Patterns](uri-template-patterns.md)
 
