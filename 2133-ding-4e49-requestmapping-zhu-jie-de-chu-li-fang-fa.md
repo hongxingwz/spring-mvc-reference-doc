@@ -18,12 +18,14 @@
 * 与当请请求绑定的时区信息java.util.TimeZone\(Java6以上的版本\) / java.time.ZoneId\(java8\),由LocaleContextResolver解析得到
 
 * 用于存取请求正文的java.io.InputStream或java.io.Reader。该对象与通过Servlet API拿到的输入流/Reader是一样的。
+
 * 用于生成响应正文的java.io.OutputStream或java.io.Writer。该对象与通过Servlet API拿到的输出流/Writer是一样的。
 * org.springframework.http.HttpMethod。可以拿到HTTP请求方法
 * 带@PathVariable注解的方法参数，其存放了URI模板变量中的值
 * 带@MatrixVariable注解的方法参数，其存放了URI路径段中的键值对
 * @RequestParam注解的方法参数，其存放了Servlet请求中所指定的参数。参数的值会被转换成方法参数所声明的类型
 * @RequestHeader 注解的方法参数，其存放了Servlet请求中所指定的HTTP请求头的值。参数的值会被转换成方法参数所声明的类型
+* ~~带@RequestBody注解的参数，提供了对HTTP请求体的存取。参数的值通过HttpMessageConverter被转换成方法参数所声明的类型。~~
 
 
 
