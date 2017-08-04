@@ -9,4 +9,5 @@
 * [@CookieValue](cookievalue.md)
 * [Composed @RequestMaping Variants](composed-requestmaping-variants.md)
 * [后缀模式匹配](hou-zhui-mo-shi-pi-pei.md)
+* [可消费的媒体类型](ke-xiao-fei-de-mei-ti-lei-xing.md)
 
