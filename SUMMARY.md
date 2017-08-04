@@ -13,4 +13,5 @@
 * [可生产的媒体类型](ke-sheng-chan-de-mei-ti-lei-xing.md)
 * [请求参数与请求头的值 ](qing-qiu-can-shu-yu-qing-qiu-tou-de-zhi.md)
 * [21.3.3 定义@RequestMapping注解的处理方法](2133-ding-4e49-requestmapping-zhu-jie-de-chu-li-fang-fa.md)
+* 使用HTTP实体HttpEntity
 
