@@ -1,4 +1,61 @@
 # 使用springmvc时处理404的方法
+## 如何定义404
+404,说白了就是找不到页面，那么如何定义“找不到”呢？
+我们可以通过源代码看看Spring MVC如何定义“404”的：
+
+在DispatcherServlet中的doDispatch方法中有
+```
+// Determine handler for the current request.
+	mappedHandler = getHandler(processedRequest);
+	if (mappedHandler == null || mappedHandler.getHandler() == null) {			noHandlerFound(processedRequest, response);
+			return;
+    }
+```
+
+getHandler是根据请求的url，通过handleMapping来匹配到Controller的过程。
+如果匹配不到，那么就执行noHandlerFound方法。这个方法很简单，返回一个404的错误代码。
+我们的web容器，比如tomcat，会根据这个错误代码来生成一个错误界面给用户。
+那么，我们如何定义这个界面呢？
+
+##重写noHandlerFound方法
+最先想到的肯定是重写noHandlerFound方法，这个方法是protected，可以重写
+
+那么就自己定义一个MyDispatcherServlet类继承DispatcherServlet并重写noHandlerFound方法
+
+
+```
+    @Override
+    protected void noHandlerFound(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        response.sendRedirect(request.getContextPath() + "/error.jsp");
+    }
+```
+或者重定向到一个定义好的@Controller上
+
+
+```
+@Controller
+@RequestMapping("/test/")
+public class TestController {
+
+    @RequestMapping("get3")
+    @ResponseBody
+    public String get3(HttpServletRequest request) {
+        String contextPath = request.getContextPath();
+        return contextPath + "/a/b/c";
+    }
+}
+```
+
+```
+    @Override
+    protected void noHandlerFound(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        response.sendRedirect(request.getContextPath() + "/test/get3");
+    }
+```
+
+
+
+
 
 ## 利用web容器提供的error-page
 
@@ -45,6 +102,36 @@ Spring MVC对于url的匹配采用的是一种叫做“最精确匹配的方式�
 * 首先我们定义一个拦截所有url的规则@RequestMapping("*"),那么实际不存在找不到的页面了，也就是永远不会进入noHandlerFound方法体内
 * 后面的步骤和平时一样，为别的请求配置上@RequestMapping
 那么请求过来，要么进入我们精确匹配的method(也就是找到的），要么进入@RequestMapping("*")拦截的方法体内(也就是找不到的)
+
+如
+
+
+```
+@Controller
+public class ErrorController {
+
+    @RequestMapping("/*")
+    @ResponseBody
+    public String get2() {
+        return "/*";
+    }
+
+    @RequestMapping("/**")
+    @ResponseBody
+    public String get() {
+        return "str str";
+    }
+}
+```
+
+会与下面的配置冲突
+
+
+```
+<mvc:resources mapping="/resources/**" location="/resources/"/>
+```
+在这里我不推荐使用
+
 
 
 
