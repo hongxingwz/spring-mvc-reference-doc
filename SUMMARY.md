@@ -15,4 +15,5 @@
 * [21.3.3 定义@RequestMapping注解的处理方法](2133-ding-4e49-requestmapping-zhu-jie-de-chu-li-fang-fa.md)
 * [使用HTTP实体HttpEntity](shi-yong-http-shi-ti-httpentity.md)
 * [总:SpringMVC 向页面传递参数的4种方式](603b3a-springmvc-xiang-ye-mian-chuan-di-can-shu-de-4-zhong-fang-shi.md)
+* [使用springmvc时处理404的方法](shi-yongspringmvc-shi-chu-li-404-de-fang-fa.md)
 
