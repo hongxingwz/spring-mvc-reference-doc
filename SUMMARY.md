@@ -13,6 +13,7 @@
 * [可生产的媒体类型](ke-sheng-chan-de-mei-ti-lei-xing.md)
 * [请求参数与请求头的值 ](qing-qiu-can-shu-yu-qing-qiu-tou-de-zhi.md)
 * [21.3.3 定义@RequestMapping注解的处理方法](2133-ding-4e49-requestmapping-zhu-jie-de-chu-li-fang-fa.md)
+* [使用@RequestParam把请求参数绑定到方法参数\(Binding request parameters to method parameters with @RequestParam\)](shi-7528-requestparam-ba-qing-qiu-can-shu-bang-ding-dao-fang-fa-can-657028-binding-request-parameters-to-method-parameters-with-requestparam.md)
 * [使用HTTP实体HttpEntity\(Using HttpEntity\)](shi-yong-http-shi-ti-httpentity.md)
 * [使用@RestController注解创建REST控制器\(Creating REST Controllers with the @RestController annotation\)](shi-7528-restcontroller-zhu-jie-chuang-jian-rest-kong-zhi566828-creating-rest-controllers-with-the-restcontroller-annotation.md)
 * [使用@ResponseBody注解映射响应体\(Mapping the response body with the @ResponseBody annotation\)](shi-7528-responsebody-zhu-jie-ying-she-xiang-ying-ti.md)
