@@ -26,4 +26,5 @@
 * [总：Controller返回String类型中文乱码问题](zong-ff1a-controller-fan-hui-string-lei-xing-zhong-wen-luan-ma-wen-ti.md)
 * [可消费的媒体类型\(Consumable Media Types\)](ke-xiao-fei-de-mei-ti-lei-578b28-consumable-media-types.md)
 * [可生产的媒体类型\(Producible Media Types\)](ke-sheng-chan-de-mei-ti-lei-578b28-producible-media-types.md)
+* [方法参数和类型转换\(Method Parameters And Type Conversion\)](fang-fa-can-shu-he-lei-xing-zhuan-636229-method-parameters-and-type-conversion.md)
 
