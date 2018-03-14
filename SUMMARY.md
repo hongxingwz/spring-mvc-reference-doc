@@ -21,4 +21,6 @@
 * [总：使用springmvc时处理404的方法](shi-yongspringmvc-shi-chu-li-404-de-fang-fa.md)
 * [总：Http请求中Content-Type讲解以及在Spring MVC中的应用](zong-ff1a-http-qing-qiu-zhong-content-type-jiang-jie-yi-ji-zai-spring-mvc-zhong-de-ying-yong.md)
 * [总：Controller返回String类型中文乱码问题](zong-ff1a-controller-fan-hui-string-lei-xing-zhong-wen-luan-ma-wen-ti.md)
+* [可消费的媒体类型\(Consumable Media Types\)](ke-xiao-fei-de-mei-ti-lei-578b28-consumable-media-types.md)
+* [可生产的媒体类型\(Producible Media Types\)](ke-sheng-chan-de-mei-ti-lei-578b28-producible-media-types.md)
 
