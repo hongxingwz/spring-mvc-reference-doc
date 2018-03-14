@@ -86,6 +86,7 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
   <version>${jackson.version}</version>
 </dependency>
 ```
+这样以后就不会报异常了
 
 
 
