@@ -23,4 +23,5 @@
 * [总：Controller返回String类型中文乱码问题](zong-ff1a-controller-fan-hui-string-lei-xing-zhong-wen-luan-ma-wen-ti.md)
 * [可消费的媒体类型\(Consumable Media Types\)](ke-xiao-fei-de-mei-ti-lei-578b28-consumable-media-types.md)
 * [可生产的媒体类型\(Producible Media Types\)](ke-sheng-chan-de-mei-ti-lei-578b28-producible-media-types.md)
+* [请求参数和请求头的值\(Request Parameters and Header Values\)](qing-qiu-can-shu-he-qing-qiu-tou-de-503c28-request-parameters-and-header-values.md)
 

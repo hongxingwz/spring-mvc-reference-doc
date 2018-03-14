@@ -1,6 +1,6 @@
 # 定义@RequestMapping注解的处理方法
 
-使用@RequestMapping注解的处理方法可以拥有非常灵活的方法签名，它支持的方法参数及返回值类型将在接下来的小节讲述。大多数参数都可以任意的次序出现，除了唯一的一个例外：BindingResult参数。
+使用@RequestMapping注解的处理方法可以拥有非常灵活的方法签名，它支持的方法参数及返回值类型将在接下来的小节讲述。大多数参数都可以以任意的次序出现，除了唯一的一个例外：BindingResult参数。这将在下面的章节描述
 
 > Spring3.1中新增了一些类，用以增强注解了@RequestMapping的处理方法，分别是RequestMappingHandlerMapping类和RequestMappingHandlerAdapter类。我们鼓励使用这组新的类，如果要使用Spring3.1及以后版本的新特性，这组类甚至是必须使用的。这些增强类在MVC的命名空间配置和MVC的Java编程方式配置中都是默认开启的，如果不是使用这两种方法，那么就需要显式地配置
 
