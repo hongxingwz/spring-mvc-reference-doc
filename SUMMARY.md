@@ -18,5 +18,7 @@
 * [使用@RestController注解创建REST控制器\(Creating REST Controllers with the @RestController annotation\)](shi-7528-restcontroller-zhu-jie-chuang-jian-rest-kong-zhi566828-creating-rest-controllers-with-the-restcontroller-annotation.md)
 * [使用@ResponseBody注解映射响应体\(Mapping the response body with the @ResponseBody annotation\)](shi-7528-responsebody-zhu-jie-ying-she-xiang-ying-ti.md)
 * [总:SpringMVC 向页面传递参数的4种方式](603b3a-springmvc-xiang-ye-mian-chuan-di-can-shu-de-4-zhong-fang-shi.md)
-* [使用springmvc时处理404的方法](shi-yongspringmvc-shi-chu-li-404-de-fang-fa.md)
+* [总：使用springmvc时处理404的方法](shi-yongspringmvc-shi-chu-li-404-de-fang-fa.md)
+* [总：Http请求中Content-Type讲解以及在Spring MVC中的应用](zong-ff1a-http-qing-qiu-zhong-content-type-jiang-jie-yi-ji-zai-spring-mvc-zhong-de-ying-yong.md)
+* [总：Controller返回String类型中文乱码问题](zong-ff1a-controller-fan-hui-string-lei-xing-zhong-wen-luan-ma-wen-ti.md)
 
